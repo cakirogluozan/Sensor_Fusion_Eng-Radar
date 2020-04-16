@@ -38,11 +38,9 @@ initial position of target assigned with an error margin of +/- 10 meters."
         * *Evaluation of RDM*
     - Selection of Training, Guard cells and offset.
 
-        *Too low and too high values cause False Positive or False Negative. Selection of Training cell parameters (both in Range and Doppler dimension) as 50 worked well in my project.*
-
-        *Change Guard cell value in Range dimension does not have a big effect on the performance yet it has a big impact in Doppler dimension.*
-
-        *I observed the peak value and ground values about 42 and 25 respectively. I selected 18 as I eliminate all the noises and lower posibilities.*
+        * *Too low and too high values cause False Positive or False Negative. Selection of Training cell parameters (both in Range and Doppler dimension) as 50 worked well in my project.*
+        * *Change Guard cell value in Range dimension does not have a big effect on the performance yet it has a big impact in Doppler dimension.*
+        * *I observed the peak value and ground values about 42 and 25 respectively. I selected 18 as I eliminate all the noises and lower posibilities.*
 
     - Steps taken to suppress the non-thresholded cells at the edges.
       - *While RDM has value either 0 or 1 by thresholding, the values between 0 and 1 is suppressed to 0.* 
